@@ -1,6 +1,6 @@
 [project]
 name = "gpu-scheduler"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple tool to schedule gpu resources."
 readme = "README.md"
 authors = [
