@@ -1,0 +1,17 @@
+[project]
+name = "gpu-scheduler"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shubhashis Roy Dipta", email = "iamdipta@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+gpu-scheduler = "gpu_scheduler:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
