@@ -7,14 +7,14 @@ Let's say you have a server with 4 GPUs and you want to run 10 jobs (each job re
 ## Installation
 
 ```bash
-pip install gpuscheduler
+pip install gpu-scheduler
 ```
 
 ## Usage
 
 ```python
 import time
-from gpuscheduler import GPUScheduler
+from gpu_scheduler import GPUScheduler
 
 def hf_with_given_gpu_ids(model_id, gpu_ids: list):
     device_map = {str(i): f"cuda:{gpu_id}" for i, gpu_id in enumerate(gpu_ids)}
@@ -28,7 +28,6 @@ def func(model_id, gpu_ids: list):
     This is the list of GPU IDs that the job will run on
     You have to manually set the GPU IDs in your code, i.e., above `hf_with_given_gpu_ids` function
     """
-    print(f"{model_id=} {gpu_ids=}")
     time.sleep(4)  # Simulate job running
     return model_id, gpu_ids
 
